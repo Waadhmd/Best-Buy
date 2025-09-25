@@ -32,8 +32,6 @@ def main():
 
     best_buy = Store(product_list)
     products = best_buy.get_all_products()
-    print(best_buy.get_total_quantity())
-    print(best_buy.order([(products[0], 1), (products[1], 2)]))
 
 if __name__ == '__main__':
     main()
