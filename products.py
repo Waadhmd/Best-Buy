@@ -1,5 +1,16 @@
 
 class Product:
+    """
+    Represents a product available in the store.
+
+    Methods:
+        get_quantity() -> int: Returns the current stock quantity.
+        set_quantity(quantity: int): Updates the stock quantity, deactivates if zero.
+        is_active() -> bool: Checks if the product is active.
+        deactivate(): Marks the product as inactive.
+        show() -> str: Returns a string representation of the product.
+        buy(quantity: int) -> float: Purchases items, decreases stock, returns total price.
+    """
     def __init__(self, name:str, price:float, quantity:int):
             if not name.strip():
                 raise ValueError('Name cannot be an empty string')

@@ -1,6 +1,17 @@
 from products import Product
 
 class Store:
+    """
+    Represents a store that holds and manages multiple products.
+
+    Methods:
+        add_product(product: Product): Adds a product to the store.
+        remove_product(product: Product): Removes a product from the store.
+        get_total_quantity() -> int: Returns the total stock of all products.
+        get_all_products() -> list[Product]: Returns all active products.
+        order(shopping_list: list[tuple[Product, int]]) -> float:
+            Processes an order of multiple products and returns the total cost.
+    """
     def __init__(self,products:list[Product]):
         self.products = products
 
